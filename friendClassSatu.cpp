@@ -16,3 +16,21 @@ public:
     friend class siswa;
 };
 
+class siswa
+{
+private:
+    int id;
+
+public:
+    void setId(int pId) {
+        id = pId;
+    }
+    
+    void displayAll(orang &a) {
+        cout << "ID Siswa: " << id << endl;
+        // Karena 'siswa' adalah friend class dari 'orang', 
+        // ia bisa mengakses member private 'nama'
+        cout << "Nama Orang: " << a.nama << endl;
+    }
+};
+
