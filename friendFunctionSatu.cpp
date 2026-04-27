@@ -20,3 +20,12 @@ void setNama(mahasiswa &a, string b)
     cout << a.nama;
 }
 
+int main()
+{
+    mahasiswa joko;
+    
+    // Memanggil fungsi setNama untuk mengisi private member 'nama'
+    setNama(joko, "Joko Kumat");
+    
+    return 0;
+}
