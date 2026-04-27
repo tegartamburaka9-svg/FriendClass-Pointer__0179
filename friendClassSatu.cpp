@@ -34,3 +34,14 @@ public:
     }
 };
 
+int main() {
+    orang objekOrang;
+    siswa objekSiswa;
+
+    objekOrang.setNama("Budi");
+    objekSiswa.setId(101);
+
+    objekSiswa.displayAll(objekOrang);
+
+    return 0;
+}
