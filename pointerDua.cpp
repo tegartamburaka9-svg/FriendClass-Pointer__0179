@@ -1,17 +1,14 @@
-#include <iostream>
-#include <string>
 
+#include <iostream>
 using namespace std;
 
-class siswa; // Forward declaration
-
-class orang
+class mahasiswa
 {
-private:
-    string nama;
-
 public:
-    void setNama(string pNama);
-    friend class siswa;
+    int nim;
+    void showNim()
+    {
+        cout << "No Induk = " << nim << endl;
+    }
 };
 
