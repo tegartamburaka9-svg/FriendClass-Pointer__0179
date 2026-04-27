@@ -13,3 +13,10 @@ public:
     friend void setNama(mahasiswa &a, string);
 };
 
+// Definisi fungsi global (bukan bagian dari class)
+void setNama(mahasiswa &a, string b)
+{
+    a.nama = b;
+    cout << a.nama;
+}
+
