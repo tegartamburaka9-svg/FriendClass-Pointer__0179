@@ -24,3 +24,12 @@ void manusia::showNilaiPelajar(pelajar &x)
     cout << x.nilai;
 }
 
+int main()
+{
+    manusia budi;
+    pelajar budi_pelajar;
+    
+    budi.showNilaiPelajar(budi_pelajar);
+    
+    return 0;
+}
